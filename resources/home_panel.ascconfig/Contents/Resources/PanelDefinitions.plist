@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Panels</key>
+	<dict>
+		<key>USER.1294D950-8ECF-47D1-AA99-759B21E9D17F</key>
+		<dict>
+			<key>DisplayOrder</key>
+			<integer>1</integer>
+			<key>GlidingLensSize</key>
+			<integer>5</integer>
+			<key>HasTransientPosition</key>
+			<false/>
+			<key>HideHome</key>
+			<false/>
+			<key>HideMinimize</key>
+			<false/>
+			<key>HidePanelAdjustments</key>
+			<false/>
+			<key>HideSwitchDock</key>
+			<false/>
+			<key>HideSwitchDockContextualButtons</key>
+			<false/>
+			<key>HideTitlebar</key>
+			<false/>
+			<key>ID</key>
+			<string>USER.1294D950-8ECF-47D1-AA99-759B21E9D17F</string>
+			<key>Name</key>
+			<string>THE SHUFFLER</string>
+			<key>PanelObjects</key>
+			<array>
+				<dict>
+					<key>Actions</key>
+					<array>
+						<dict>
+							<key>ActionParam</key>
+							<dict>
+								<key>BundleID</key>
+								<string>com.avesig.theshuffler</string>
+								<key>Path</key>
+								<string>/Users/daisyjames/Desktop/THE_SHUFFLER/THE SHUFFLER.app</string>
+							</dict>
+							<key>ActionRecordedOffset</key>
+							<real>0.0</real>
+							<key>ActionType</key>
+							<string>ActionOpenApplication</string>
+							<key>ID</key>
+							<string>Action.3D48BC35-CDA5-49BE-B9AD-D0F62ECCD342</string>
+						</dict>
+					</array>
+					<key>ButtonType</key>
+					<integer>0</integer>
+					<key>DisplayColor</key>
+					<string>0.525 0.525 0.547 1.000</string>
+					<key>DisplayImageResource</key>
+					<string>Image.756C17A8-6515-4B4D-9F56-527B30E7A5B7</string>
+					<key>DisplayImageResourceIsTemplate</key>
+					<false/>
+					<key>DisplayImageWeight</key>
+					<string>FontWeightRegular</string>
+					<key>DisplayText</key>
+					<string>THE SHUFFLER</string>
+					<key>FontColor</key>
+					<string>0.687 0.223 0.935 1.000</string>
+					<key>FontSize</key>
+					<real>12</real>
+					<key>ID</key>
+					<string>Button.9457711A-4BB7-4B0A-8F7B-7678E8EC3896</string>
+					<key>PanelObjectType</key>
+					<string>Button</string>
+					<key>Rect</key>
+					<string>{{0, 0}, {225, 215}}</string>
+				</dict>
+			</array>
+			<key>ProductSupportType</key>
+			<string>VirtualKeyboard</string>
+			<key>Rect</key>
+			<string>{{0, 104}, {225, 215}}</string>
+			<key>ScanStyle</key>
+			<integer>0</integer>
+			<key>ShowPanelLocationString</key>
+			<string>DefaultHomePanel</string>
+			<key>UsesPinnedResizing</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>ToolbarOrdering</key>
+	<dict>
+		<key>ToolbarIdentifiersAfterBasePanel</key>
+		<array/>
+		<key>ToolbarIdentifiersPriorToBasePanel</key>
+		<array>
+			<string>ACSH.systemPanel.dynamic.bestDwellActions</string>
+			<string>ACSH.systemPanel.dynamic.hoverText</string>
+			<string>ACSH.systemPanel.dynamic.bestSuggestions</string>
+			<string>ACSH.systemPanel.dynamic.bestFunctionKeys</string>
+		</array>
+	</dict>
+</dict>
+</plist>

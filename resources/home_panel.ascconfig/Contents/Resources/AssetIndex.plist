@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Image.756C17A8-6515-4B4D-9F56-527B30E7A5B7</key>
+	<dict>
+		<key>Name</key>
+		<string>panel_icon</string>
+		<key>Type</key>
+		<string>Image</string>
+	</dict>
+</dict>
+</plist>

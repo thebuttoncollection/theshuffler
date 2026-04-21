@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# compiled binaries — rebuilt per machine by installer
+resources/setwallpaper
+THE SHUFFLER.app
+Install.app
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# temp files
+*.lock
+*.pid
+/tmp/
