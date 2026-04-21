@@ -1,7 +1,7 @@
 # THE SHUFFLER
 
 A fidget toy-like experience for your desktop (macOS only)
-Built for the ADHD/autistic brain that needs just a little something to do while the computer catches up. It's a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No background app. No daemon. Virtually no CPU drain. Fires once and dies.
+Built for the ADHD brain that needs just a little something to do while the computer catches up. It's a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No background app. No daemon. Virtually no CPU drain. Fires once and dies.
 
 ---
 
