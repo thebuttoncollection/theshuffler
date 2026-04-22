@@ -1,6 +1,7 @@
 # THE SHUFFLER (macOS)
-### A fidget-widget for your macOS desktop.
+A fidget-widget for your macOS desktop.
 Built for the ADHD brain that needs something to do while the computer catches up. It's a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No background processes. No daemon or helpers. Virtually no CPU drain. Fires once and dies.
+
 ---
 ## WHAT'S INSIDE
 ```
@@ -10,8 +11,9 @@ THE_SHUFFLER/
 ├── resources/           — the engine. don't move anything out of here
 └── wallpaper images/    — your images live here. swap them out anytime
 ```
-### **resources/** contains the scripts, binaries, sound file, and panel config that make everything work. You don't need to touch anything in here — but it needs to stay in the same folder as the apps.
+**resources/** contains the scripts, binaries, sound file, and panel config that make everything work. You don't need to touch anything in here — but it needs to stay in the same folder as the apps.
 **wallpaper images/** is yours. Delete the included images, drop in your own JPGs, PNGs, or TIFFs, and THE SHUFFLER will pick from whatever is in there.
+
 ---
 ## GETTING STARTED
 ### 1. Clone the repo
