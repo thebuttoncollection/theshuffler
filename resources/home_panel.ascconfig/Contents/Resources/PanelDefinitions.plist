@@ -70,13 +70,13 @@
 					<key>PanelObjectType</key>
 					<string>Button</string>
 					<key>Rect</key>
-					<string>{{0, 0}, {80, 80}}</string>
+					<string>{{0, 0}, {125, 125}}</string>
 				</dict>
 			</array>
 			<key>ProductSupportType</key>
 			<string>VirtualKeyboard</string>
 			<key>Rect</key>
-			<string>{{95, 97}, {80, 80}}</string>
+			<string>{{95, 175}, {125, 125}}</string>
 			<key>ScanStyle</key>
 			<integer>0</integer>
 			<key>ShowPanelLocationString</key>
