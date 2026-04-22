@@ -52,7 +52,7 @@
 					<key>ButtonType</key>
 					<integer>0</integer>
 					<key>DisplayColor</key>
-					<string>0.525 0.525 0.547 1.000</string>
+					<string>0.687 0.223 0.935 1.000</string>
 					<key>DisplayImageResource</key>
 					<string>Image.528ADF99-BFD3-424F-9E1A-A44E04100A70</string>
 					<key>DisplayImageResourceIsTemplate</key>
@@ -70,13 +70,13 @@
 					<key>PanelObjectType</key>
 					<string>Button</string>
 					<key>Rect</key>
-					<string>{{0, 0}, {225, 215}}</string>
+					<string>{{0, 0}, {100, 100}}</string>
 				</dict>
 			</array>
 			<key>ProductSupportType</key>
 			<string>VirtualKeyboard</string>
 			<key>Rect</key>
-			<string>{{0, 80}, {225, 215}}</string>
+			<string>{{95, 199}, {100, 100}}</string>
 			<key>ScanStyle</key>
 			<integer>0</integer>
 			<key>ShowPanelLocationString</key>
