@@ -1,7 +1,14 @@
-# THE SHUFFLER (macOS)
+# THE SHUFFLER
 
-A fidget toy-like experience for your desktop (macOS only).
-Built for the ADHD brain that needs something to do while the computer catches up. It's a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No background app. No daemon. Virtually no CPU drain. Fires once and dies.
+click. shuffle. repeat.
+
+---
+
+THE SHUFFLER is a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No app running in the background. No daemon. No CPU drain. It does exactly one thing — and only when you tell it to.
+
+Think of it as a fidget toy for your desktop. Waiting for a page to load? Click it. Waiting for a file to export? Click it. Just need something to do with your hands while your brain is doing seventeen other things? Click it. Each press fires a new random wallpaper and a little sound. That's it. That's the whole app.
+
+Built for the ADHD/autistic brain that needs just a little something to do while the computer catches up.
 
 ---
 
@@ -25,7 +32,7 @@ THE_SHUFFLER/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/ave-sig/the_shuffler.git && cd the_shuffler && bash resources/build_apps.sh
+git clone https://github.com/thebuttoncollection/theshuffler.git ~/Desktop/the_shuffler && cd ~/Desktop/the_shuffler && bash resources/build_apps.sh
 ```
 
 Or download the ZIP from GitHub and run:
@@ -54,7 +61,7 @@ Follow the steps in the Terminal window:
 7. THE SHUFFLER button will appear in your floating keyboard
 
 ### 4. Use it
-Click the button in your Accessibility Keyboard whenever you feel like it. Each click plays a sound and shuffles to a new random wallpaper.
+Click the button in your Accessibility Keyboard whenever you feel like it. Each click plays a sound and shuffles to a new random wallpaper. Rapid fire is encouraged.
 
 ---
 
@@ -74,11 +81,6 @@ Replace **resources/the_sound.aiff** with any AIFF or WAV file. Keep the filenam
 
 When you click the button, the Accessibility Keyboard triggers THE SHUFFLER.app. The app plays a sound, picks a random image from your wallpaper images folder, and sets it as your desktop wallpaper — then exits completely. Nothing stays running. Nothing is watching in the background. Your CPU has no idea it existed.
 
-## BUGS
-
-- Rapid firing can occasionally outrun the app. You might hear the click sound but the wallpaper doesn’t change. If that happens, just click again and it will catch up.
-- Make sure the image extensions are lowercase (png vs PNG, jpg vs JPG). For some reason this ensures the images work on my end.
-
 ---
 
 ## REQUIREMENTS
@@ -91,7 +93,7 @@ When you click the button, the Accessibility Keyboard triggers THE SHUFFLER.app.
 
 ## MOVING THE FOLDER
 
-Move the whole `THE_SHUFFLER` folder anywhere you want, then run **Install.app** again. Everything reconfigures itself automatically.
+Move the whole folder anywhere you want, then run **Install.app** again. Everything reconfigures itself automatically.
 
 ---
 
