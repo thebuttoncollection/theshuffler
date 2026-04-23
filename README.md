@@ -2,6 +2,9 @@
 A fidget-widget for your macOS desktop.
 Built for the ADHD brain that needs something to do while the computer catches up. It's a single-purpose wallpaper randomizer that lives in your macOS Accessibility Keyboard. No background processes. No daemon or helpers. Virtually no CPU drain. Fires once and dies.
 
+Installation Video Tutorial
+https://www.youtube.com/watch?v=KOZSRdrZaJQ
+
 ## WHAT'S INSIDE
 ```
 THE_SHUFFLER/
