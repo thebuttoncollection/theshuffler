@@ -17,6 +17,92 @@ def run(cmd, cwd=None):
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=cwd)
     return result.returncode, result.stdout, result.stderr
 
+def check_dependencies():
+    """Check that Xcode Command Line Tools are installed and Swift compiler matches SDK."""
+    print("[ 0 / 3 ] Checking dependencies...")
+
+    # check xcode-select
+    code, out, err = run("xcode-select -p")
+    if code != 0:
+        print()
+        print("  ERROR: Xcode Command Line Tools not found.")
+        print()
+        print("  Please install them by running this in Terminal:")
+        print("    xcode-select --install")
+        print()
+        print("  Wait for the install to fully complete, restart your Mac,")
+        print("  then run this installer again.")
+        input("\nPress Enter to exit...")
+        sys.exit(1)
+
+    # check swiftc exists
+    code, out, err = run("which swiftc")
+    if code != 0:
+        print()
+        print("  ERROR: Swift compiler (swiftc) not found.")
+        print()
+        print("  Please install Xcode Command Line Tools:")
+        print("    xcode-select --install")
+        print()
+        print("  Wait for the install to fully complete, restart your Mac,")
+        print("  then run this installer again.")
+        input("\nPress Enter to exit...")
+        sys.exit(1)
+
+    # check swift compiler version matches SDK
+    # this catches the mismatch that causes the SwiftBridging redefinition error
+    code, out, err = run("swiftc --version")
+    compiler_version = out.strip()
+
+    code2, out2, err2 = run("xcrun --sdk macosx --show-sdk-path")
+    sdk_path = out2.strip()
+
+    if not sdk_path:
+        print()
+        print("  ERROR: macOS SDK not found. Your Xcode Command Line Tools")
+        print("  may be corrupted or mismatched with your macOS version.")
+        print()
+        print("  To fix, run these commands one at a time:")
+        print("    sudo rm -rf /Library/Developer/CommandLineTools")
+        print("    xcode-select --install")
+        print()
+        print("  Wait for the install to fully complete, restart your Mac,")
+        print("  then run this installer again.")
+        input("\nPress Enter to exit...")
+        sys.exit(1)
+
+    # do a quick compile test to catch SDK mismatch before the real compile
+    test_swift = "/tmp/the_shuffler_test.swift"
+    test_bin = "/tmp/the_shuffler_test"
+    with open(test_swift, "w") as f:
+        f.write('import Foundation\nprint("ok")\n')
+
+    code, out, err = run(f'swiftc "{test_swift}" -o "{test_bin}"')
+
+    # clean up test files
+    for f in [test_swift, test_bin]:
+        try:
+            os.remove(f)
+        except:
+            pass
+
+    if code != 0:
+        print()
+        print("  ERROR: Swift compiler and macOS SDK are mismatched.")
+        print("  This usually happens after a macOS update.")
+        print()
+        print("  To fix, run these commands one at a time in Terminal:")
+        print("    sudo rm -rf /Library/Developer/CommandLineTools")
+        print("    xcode-select --install")
+        print()
+        print("  IMPORTANT: Wait for the popup to say 'Done' before continuing.")
+        print("  Then restart your Mac and run this installer again.")
+        input("\nPress Enter to exit...")
+        sys.exit(1)
+
+    print("  All good.")
+    print()
+
 def main():
     script_dir = Path(__file__).parent.resolve()
     root_dir = script_dir.parent.resolve()
@@ -30,6 +116,9 @@ def main():
     print("THE SHUFFLER — Installer")
     print("=" * 40)
     print()
+
+    # ── STEP 0: check dependencies ──
+    check_dependencies()
 
     # ── STEP 1: compile setwallpaper ──
     print("[ 1 / 3 ] Compiling wallpaper engine...")
